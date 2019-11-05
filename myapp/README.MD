@@ -13,8 +13,6 @@ to release port.
 
 Go to localhost:8000
 
-With phpstorm did not manage to connect to database, but database looks working.
-
 Run some command examples:
 
 `docker-compose  exec myapp myapp/bin/console make:entity`
