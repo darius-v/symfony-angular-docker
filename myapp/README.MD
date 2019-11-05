@@ -23,3 +23,15 @@ Run some command examples:
 
 `docker-compose exec myapp composer require symfony/maker-bundle --dev`
 
+Posting example:
+=
+
+Send post request with header:
+
+Content-Type: application/json
+
+And body: 
+
+{
+  "name": "tests"
+}
