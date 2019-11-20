@@ -4,7 +4,7 @@ Run:
 
 If gives error
 
-"ERROR: for symfony-angular_mariadb_1  Cannot start service mariadb: b'driver failed programming external connectivity on endpoint symfony-angular_mariadb_1 (066194adba212da6bd3cd282e39636d383a1cabcc35ed6127980ff7ae86eff24): Error starting userland proxy: listen tcp 0.0.0.0:3306: bind: address already in use'"
+"ERROR: for symfony-angu    lar_mariadb_1  Cannot start service mariadb: b'driver failed programming external connectivity on endpoint symfony-angular_mariadb_1 (066194adba212da6bd3cd282e39636d383a1cabcc35ed6127980ff7ae86eff24): Error starting userland proxy: listen tcp 0.0.0.0:3306: bind: address already in use'"
 
 Run 
 `service mysql stop`
@@ -28,10 +28,17 @@ Posting example:
 
 Send post request with header:
 
-Content-Type: application/json
+Content-Type: application/json9
 
 And body: 
 
 {
   "name": "tests"
 }
+
+
+TODO:
+
+* uzloadint single page action is template. Atrodo cia reik is naujo pagal ta eranstalint bet i vidini composer.json !
+ ir uzrasyt i readme kad tiap reik kai taip sugalvojo tas image kurejas su tuo myapp.
+* savint is to single page su angular.

@@ -10,6 +10,18 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class RecordsController extends AbstractController
 {
+
+    /**
+     * @Route("/", name="single_page")
+     * @return Response
+     */
+    public function  singlePageAction()
+    {
+        return $this->render('single_page.html.twig', [
+
+        ]);
+    }
+
     /**
      * @Route("/save", name="save")
      * @param Request $request
