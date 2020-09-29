@@ -15,13 +15,17 @@ Go to localhost:8000
 
 Run some command examples:
 
-`docker-compose  exec myapp myapp/bin/console make:entity`
+`docker-compose exec myapp myapp/bin/console make:entity`
 
-`docker-compose  exec myapp myapp/bin/console doctrine:migrations:diff `
+`docker-compose exec myapp myapp/bin/console doctrine:migrations:diff `
 
-`docker-compose  exec myapp myapp/bin/console doctrine:migrations:migrate`
+
 
 `docker-compose exec myapp composer require symfony/maker-bundle --dev`
+
+Run migrations
+=
+`docker-compose exec myapp myapp/bin/console doctrine:migrations:migrate`
 
 Posting example:
 =
@@ -40,7 +44,6 @@ Repository is here https://github.com/darius-v/symfony-angular-docker .
 
 TODO:
 
-* issiaikint kodel meta klaida leidzian migracija
 * isimt idea is git
 * uzloadint single page action is template. Atrodo cia reik is naujo pagal ta eranstalint bet i vidini composer.json !
  ir uzrasyt i readme kad tiap reik kai taip sugalvojo tas image kurejas su tuo myapp.
