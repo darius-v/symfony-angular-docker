@@ -48,7 +48,7 @@ services:
   mariadb:
     image: 'bitnami/mariadb:10.3'
     ports:
-      - '3306:3306'
+      - '33306:3306'
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
       - MARIADB_USER=bobby
