@@ -3,13 +3,23 @@
 namespace App\Controller;
 
 use App\Entity\Record;
+use App\Repository\RecordRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class RecordsController extends AbstractController
 {
+
+    /** @var RecordRepository */
+    private $recordRepository;
+
+    public function __construct(/*RecordRepository $recordRepository*/)
+    {
+//        $this->recordRepository = $recordRepository;
+    }
 
     /**
      * @Route("/", name="single_page")
@@ -20,6 +30,26 @@ class RecordsController extends AbstractController
         return $this->render('single_page.html.twig', [
 
         ]);
+    }
+
+    /**
+     * @Route("/list", name="list")
+     * @return Response
+     */
+    public function listAction()
+    {
+        $records = $this->getDoctrine()->getRepository(Record::class)->findAll();
+
+        $toReturn = [];
+        foreach ($records as $record) {
+            $toReturn[] = [
+                'id' => $record->getId(),
+                'name' => $record->getName(),
+                'price' => $record->getPrice()
+            ];
+        }
+
+        return new JsonResponse($toReturn);
     }
 
     /**
