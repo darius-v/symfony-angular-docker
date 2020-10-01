@@ -44,6 +44,4 @@ Repository is here https://github.com/darius-v/symfony-angular-docker
 
 TODO:
 
-* uzloadint single page action is template. Atrodo cia reik is naujo pagal ta eranstalint bet i vidini composer.json !
- ir uzrasyt i readme kad tiap reik kai taip sugalvojo tas image kurejas su tuo myapp.
 * savint is to single page su angular.
