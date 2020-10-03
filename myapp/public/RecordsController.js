@@ -10,10 +10,12 @@ app.config(function($interpolateProvider) {
 app.controller('RecordsController', ['$scope', '$http', function($scope, $http) {
 
     $scope.submit = function () {
-        $http.post(app.baseUrl + 'add')
-            .then(function(response) {
-                $scope.records.push(response.data); // todo
+        console.log($scope);
+        $http.post( app.baseUrl + 'save', {name: $scope.name})
+            .then(function (response) {
+                $scope.records.push(response.data)
             });
+
     }
 
     $http.get(app.baseUrl + 'list')

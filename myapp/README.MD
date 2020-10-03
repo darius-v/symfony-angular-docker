@@ -44,4 +44,10 @@ Repository is here https://github.com/darius-v/symfony-angular-docker
 
 TODO:
 
+* composer install profiler - kodel instalina ne i ta vendor folderi net jei ieinu pries instaliuodamas docker-compose exec  composer require --dev symfony/profiler-pack
+arba isimt ta myapp folderi - uzkniso jis nx reikalingas blet. pridaro tas bitnami gaidys visokiu nesamoniu.
+* opcache paziuret ar ok, nes keiciant metoda nereaguoja daznai https://symfony.com/doc/current/performance.html#use-the-opcache-byte-code-cache
+especially verify:
+opcache.validate_timestamps => On
+opcache.revalidate_freq => 2
 * savint is to single page su angular.
