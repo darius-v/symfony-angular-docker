@@ -42,10 +42,11 @@ And body:
 
 Repository is here https://github.com/darius-v/symfony-angular-docker
 
+Looks like it is too much hassle to remove myapp folder. Other devs said to use other php image would be easier.
+
 TODO:
 
-* composer install profiler - kodel instalina ne i ta vendor folderi net jei ieinu pries instaliuodamas docker-compose exec  composer require --dev symfony/profiler-pack
-arba isimt ta myapp folderi - uzkniso jis nx reikalingas blet. pridaro tas bitnami gaidys visokiu nesamoniu.
+* pasileisti is naujo
 * opcache paziuret ar ok, nes keiciant metoda nereaguoja daznai https://symfony.com/doc/current/performance.html#use-the-opcache-byte-code-cache
 especially verify:
 opcache.validate_timestamps => On
